@@ -698,7 +698,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 	box-sizing: border-box;
 	padding: 10px;
 	margin: 0 auto;
-	overflow: auto;
+	overflow: hidden;
 	position: relative;
 	top: 60px;
 	display: none;
@@ -1083,6 +1083,9 @@ iframe#twitter-widget-1{
 	.clickon{
 		display: none !important;
 	}
+	.contact{
+		height:100vh;
+	}
 	.landingpage{
 		padding-top: 10%;
 	}
@@ -1157,7 +1160,7 @@ iframe#twitter-widget-1{
 @media only screen and (max-device-width : 768px) and (orientation : portrait) {
 	.rotate{
 		display: block;
-}
+		position: fixed;}
 .year-inner{
 	font: 13pt;
 }
