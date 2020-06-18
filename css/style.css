@@ -172,7 +172,11 @@ body{
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-
+	height: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 
@@ -1104,7 +1108,7 @@ iframe#twitter-widget-1{
 	}
 	.navigation li.active,.navigation li.active:hover {
 		font-size: 19px !important;
-		width: 53px!important;
+		width: 100px !important;
 		line-height: 30px !important;
 	}
 	.navigation li.active.dark-menu,.navigation li.active.light-menu{
