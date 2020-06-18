@@ -343,13 +343,20 @@
          </audio>
       </div>
    </div>
-   <section class="slide" id="slide1" data-slide="1">
+   <section class="slide video-c" id="slide1" data-slide="1">
+      <div class="video-div">
+         <video src="video/bg-video.mp4" autoplay muted loop playsinline class="video"></video>
+      </div>
       <div class="wrapper">
-         <div class="year">
-            <div class="year-inner">GAME OF DRONES</div>
-            <hr>
-            <div class="year-desc">
+         <div class="year c-header">
+            <div class="year-inner c-inner">GAME OF DRONES</div>
+
+            <div class="year-desc c-desc">
                это больше чем игра
+            </div>
+            <div class="c-button">
+               <a href="#">Играть</a>
+
             </div>
          </div>
       </div>
@@ -357,11 +364,11 @@
          <source src="sounds/1920.ogg" type="audio/ogg">
          <source src="sounds/1920.mp3" type="audio/mpeg">
       </audio> -->
-      <a class="button" data-slide="2" title=""></a>
+      <a class="button" data-slide="2" title="">lol</a>
    </section>
    <section class="slide" id="slide2" data-slide="2">
       <div class="year">
-         <div class="year-inner dark">Об игре</div>
+         <div class="year-inner dark purple">Об игре</div>
          <hr class="dark-line">
          <div class="year-desc dark">
             Управляй гоночной техникой на трассе и будь в центре гонки
@@ -376,7 +383,7 @@
    </section>
    <section class="slide" id="slide3" data-slide="3">
       <div class="year">
-         <div class="year-inner">Скорость – это все!</div>
+         <div class="year-inner yellow">Скорость – это все!</div>
          <hr>
          <div class="year-desc">
             Оставь своих оппонентов далеко позади, развивая <br>
@@ -391,7 +398,7 @@
    </section>
    <section class="slide" id="slide4" data-slide="4">
       <div class="year">
-         <div class="year-inner dark">Брось вызов!</div>
+         <div class="year-inner dark purple">Брось вызов!</div>
          <hr class="dark-line">
          <div class="year-desc dark">
             Оспаривай лидерство с другими участниками на 2-х <br>
@@ -405,7 +412,7 @@
    </section>
    <section class="slide" id="slide5" data-slide="5">
       <div class="year year-shadow">
-         <div class="year-inner">Каждый момент – решающий!</div>
+         <div class="year-inner yellow">Каждый момент – решающий!</div>
          <hr>
          <div class="year-desc">
             Играй и выигрывай в честной гонке!
@@ -419,7 +426,7 @@
    </section>
    <section class="slide" id="slide6" data-slide="6">
       <div class="year">
-         <div class="year-inner dark">Испытай новые ощущения! </div>
+         <div class="year-inner dark purple">Испытай новые ощущения! </div>
          <hr>
          <div class="year-desc dark">
             Стань частью нового вида киберспорта
@@ -433,7 +440,7 @@
    </section>
    <section class="slide" id="slide7" data-slide="7">
       <div class="year ">
-         <div class="year-inner ">Уверенный в себе гонщик?</div>
+         <div class="year-inner yellow">Уверенный в себе гонщик?</div>
          <hr>
          <div class="year-desc ">
             Докажи, что ты лучший!
@@ -446,33 +453,82 @@
       <a class="button" data-slide="8" title=""></a>
    </section>
    <section class="slide" id="slide8" data-slide="8">
-      <div class="year">
-         <div class="year-inner">Что говорят о нас наши клиенты</div>
-         <hr>
-         <div class="year-desc">
-
+      <div class=" review">
+         <div class="r-header ">Что говорят о нас наши клиенты</div>
+         <div class="r-wrap">
+            <div class="r-card">
+               <h1 class="r-header">Almaz Balkenov</h1>
+               <p>To be honest it sounded too good to be true, but it works! thank you again for letting me mess around
+                  in single player without browsing any shady sites.
+               </p>
+            </div>
+            <div class="r-card">
+               <h1 class="r-header">Almaz Balkenov</h1>
+               <p>To be honest it sounded too good to be true, but it works! thank you again for letting me mess around
+                  in single player without browsing any shady sites.
+               </p>
+            </div>
+            <div class="r-card">
+               <h1 class="r-header">Almaz Balkenov</h1>
+               <p>To be honest it sounded too good to be true, but it works! thank you again for letting me mess around
+                  in single player without browsing any shady sites.
+               </p>
+            </div>
+            <div class="r-card">
+               <h1 class="r-header">Almaz Balkenov</h1>
+               <p>To be honest it sounded too good to be true, but it works! thank you again for letting me mess around
+                  in single player without browsing any shady sites.
+               </p>
+            </div>
          </div>
       </div>
-      <audio id="1990s">
+      <!-- <audio id="1990s">
          <source src="sounds/1990.ogg" type="audio/ogg">
          <source src="sounds/1990.mp3" type="audio/mpeg">
       </audio>
-      <a class="button" data-slide="9" title=""></a>
+      <a class="button" data-slide="9" title=""></a> -->
    </section>
-   <section class="slide" id="slide9" data-slide="9">
-      <div class="year">
-         <div class="year-inner">Контакты</div>
-         <hr>
-         <div class="year-desc">
-            <!-- <span>911:</span>
-            The sixth generation of the 911 series' the new 911 Turbo with 480PS<br> six-speed manual transmission
-            requires 3.9 seconds from 0 to 100 km/h. -->
+   <section class="slide overflow-hidden" id="slide9" data-slide="9">
+      <div class="contact">
+         <img src="images/l-hamilton.png" class="c-img" alt />
+         <div class="contact-h purple">Контакты</div>
+         <div class="contact-h number yellow">+77079697070</div>
+         <div class="contact-h yellow"><a href="mailto:abylaikhan.zhakanov@gmail.com" class="yellow">
+               abylaikhan.zhakanov@gmail.com
+            </a></div>
+         <div class="call-btn "><a href="tel:+77079697070">Позвоните нам</a></div>
+
+         <!-- social icons -->
+         <div class="s-icons">
+            <a href="#" class="s-icon bg-golden_yellow  flex justify-center items-center mr-4">
+               <svg class="svg" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                     d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+               </svg>
+            </a>
+            <a href="#" class="s-icon bg-golden_yellow  flex justify-center items-center mr-4">
+               <svg class="svg" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                     d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+               </svg>
+            </a>
+            <a href="#" class="s-icon bg-golden_yellow  flex justify-center items-center mr-4">
+               <svg class="svg" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                     d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z" />
+               </svg>
+            </a>
+            <a href="#" class="s-icon bg-golden_yellow  flex justify-center items-center mr-4">
+               <svg class="svg" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                     d="M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z" />
+               </svg>
+            </a>
          </div>
+
       </div>
-      <audio id="2000s">
-         <source src="sounds/2000.ogg" type="audio/ogg">
-         <source src="sounds/2000.mp3" type="audio/mpeg">
-      </audio>
+      <img src="images/car-footer.png" class="car-footer" alt />
+
       <a class="button" data-slide="10" title=""></a>
    </section>
    <!-- <section class="slide" id="slide10" data-slide="10">

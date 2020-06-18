@@ -50,6 +50,7 @@ $(document).ready(function () {
             //     volume: 1
             // }, 1000);
             $('section[id="' + dataslide1C + '"] div.year').fadeIn(2000);
+            $('section[id="' + dataslide1C + '"] div.review').fadeIn(2000);
             $('section[id="' + dataslide2P + '"] a.button').fadeOut(1000);
             // parent.location.hash = yearhashtag;
 
@@ -67,6 +68,7 @@ $(document).ready(function () {
             //     volume: 1
             // }, 1000);
             $('section[id="' + dataslide1C + '"] div.year').fadeOut(1000);
+            $('section[id="' + dataslide1C + '"] div.review').fadeOut(1000);
             $('section[id="' + dataslide2P + '"] a.button').fadeIn(1000);
             // parent.location.hash = yearhashtag;
 

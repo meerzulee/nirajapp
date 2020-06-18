@@ -103,7 +103,7 @@ jQuery(document).ready(function ($) {
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
         $('body').removeClass('noscroll');
-        // $("#start").trigger("play"); // plays the audio
+        $("#start").trigger("play"); // plays the audio
         $(".clickon").remove();
         setTimeout(
             function () {
