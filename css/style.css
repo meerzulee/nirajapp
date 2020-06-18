@@ -15,6 +15,7 @@ html,body {
 }
 
 body{
+
 }
 
 .noscroll { position: fixed; overflow-y:scroll }
@@ -271,8 +272,8 @@ li.noborder.light-menu{
 	transform: scale(1.1);
 }
 .slide {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	position: relative;
 	background-repeat: no-repeat;
 
@@ -1297,3 +1298,16 @@ iframe#twitter-widget-1{
 		font-size: 1.5rem;
 	}
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+	html {
+	  transform: rotate(-90deg);
+	  transform-origin: left top;
+	  width: 100vh;
+	  height: 100vw;
+	  overflow-x: hidden;
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	}
+  }
