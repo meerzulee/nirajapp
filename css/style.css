@@ -1146,8 +1146,7 @@ iframe#twitter-widget-1{
 }
 @media only screen and (max-device-width : 768px) and (orientation : portrait) {
 	.rotate{
-		/*display: block;*/
-	}
+		display: block;
 }
 /* Landscape phone to portrait tablet */
 @media (min-width: 480px) and (max-width: 979px) { 
