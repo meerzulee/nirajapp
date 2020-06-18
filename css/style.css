@@ -536,7 +536,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 /*SLIDES*/
 #slide0 {
 	background-color:#e5e4e9;
-	background: url(../images/slides/landingpage.jpg) center center no-repeat;
+	background: url(../images/slides/landingpage.png) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -730,7 +730,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 	color: white;
 	width: 100%;
 	font-size: 15pt;
-	margin-top: 25px;
+	margin-top: 20px;
 	text-align: center;
 }
 
@@ -766,6 +766,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 .c-inner{
+	font-size: 34pt;
 	font-size: 48pt;
 	font-weight: 800;
 	color: #ffef00;
@@ -777,7 +778,8 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 	color: white;
 	width: 100%;
 	font-size: 36pt;
-	margin-top: 50px;
+	font-size: 22pt;
+	margin-top: 6rem;
 	text-align: center;
 }
 .c-button{
@@ -802,7 +804,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 .review{
-	width: 64%;
+	max-width: 1180px;
 	
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -812,7 +814,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 	margin: 0 auto;
 	
 	position: relative;
-	top: 100px;
+	top: 8rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -825,15 +827,16 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 .r-wrap{
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 100px;
+	margin-top: 5rem;
 }
 .r-card{
 	background-color: #6801FC;
-	width: 400px;
+	width: 34%;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	margin: 40px 50px;
+	margin: 0 50px;
+	margin-top: 4rem;
 }
 .r-card:first-child{
 	margin-left: 30px;
@@ -867,12 +870,13 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 .c-img{
 	position: absolute;
+	height: 80%;
 	left: 0;
 }
 .car-footer{
 	position: absolute;
 	top: 20%;
-	
+	height: 50%;
 	right: -30%;
 }
 .contact-h{
@@ -1082,8 +1086,11 @@ iframe#twitter-widget-1{
 		margin-top: 0px;
 	}
 	.navigation{
-		margin-top: 50px;
+		height: 100%;
 		top: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	.navigation li{
 		line-height: 25px;
@@ -1128,13 +1135,12 @@ iframe#twitter-widget-1{
 		top: 60px;
 		padding: 0px 13%;
 	}
-	.year-inner{
-		display: none;
-	}
+	
 	.year-desc{
 		width: 100%;
 		padding-left: 0px;
 		border: none;
+		margin-top: 4px;
 		font-size: 11pt;
 	}
 	.year-desc span{
@@ -1148,6 +1154,10 @@ iframe#twitter-widget-1{
 	.rotate{
 		display: block;
 }
+.year-inner{
+	font: 13pt;
+}
+}
 /* Landscape phone to portrait tablet */
 @media (min-width: 480px) and (max-width: 979px) { 
 	#mute{
@@ -1160,14 +1170,37 @@ iframe#twitter-widget-1{
 	span.volume{
 
 	}
+	.landingpage-interaction{
+		bottom: 6rem;
+	}
 	span.enjoy{
 		
 	}
 	.year{
 		width: 70%;
-		top: 60px;
+		top: 30px;
 		padding: 0px;
 	}
+	.year-desc{
+		margin-top: 8px;
+	}
+	.c-header{
+		width: 90%;
+		top: 5%;
+	}
+.c-inner{
+	font-size: 4rem;
+	margin-top: 6rem;
+}
+.c-desc{
+
+	font-size: 22pt;
+	margin-top: 2rem;
+	
+}
+.c-button a {
+	font-size: 2rem;
+}
 	.about-title{
 		float: auto;
 		text-align: left;
@@ -1186,9 +1219,74 @@ iframe#twitter-widget-1{
 	.weblink a{
 		font-size: 30px;
 	}
+	.review{
+		top: 4rem;
+	}
+	.r-header{
+		font-size: 18pt;
+	}
+	.r-wrap{
+		margin-top: 0;
+	}
+	.r-card {
+		padding: 1.5rem;
+		margin: 0 3rem;
+		margin-top: 3rem;
+	}
+	.r-card p{
+		line-height: 2rem;
+		margin-top: 1rem;
+		font-size: 8pt;
+	}
+	.contact-h{
+		z-index: 100;
+	}
+	.number{
+		margin-top: 5rem;
+		margin-bottom: 3rem;
+	}
+	.call-btn{
+		margin-top: 2rem;
+	}
+	.c-img{
+		display: none;
+	}
+	.car-footer{
+		display: none;
+	}
+	.navigation{
+		margin-top: 1rem;
+	}
+	.navigation li{
+		font-size: 12px;
+		line-height: 16px;
+		padding: 4px 10px;
+	}
+	.navigation li.active,.navigation li.active:hover {
+		font-size: 14px !important;
+		width: 60px!important;
+		line-height: 14px !important;
+	}
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
 	.new-logo,.volume{
 		text-align:center;
+	}
+	.r-card{
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.r-card:nth-last-child(odd) {
+		display: none;
+	}
+	.number{
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+	}
+	.contact-h a{
+		font-size: 2rem;
+	}
+	.call-btn a{
+		font-size: 1.5rem;
 	}
 }
