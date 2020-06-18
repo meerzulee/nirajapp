@@ -184,7 +184,8 @@ body{
 	font-weight:600;
 	border-bottom:2px solid rgba(51, 51, 51, 0.65);
 	text-align:left;
-	width:53px;
+	/* width:53px; */
+	width:80px;
 	padding-left: 28px;
 	cursor:pointer;
 	-webkit-transition: all .2s ease-in-out;
@@ -523,7 +524,8 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide1 {
-	background: url(../images/slides/porsche.jpg) center center no-repeat;
+	background: black;
+	/* background: url(../images/slides/porsche.jpg) center center no-repeat; */
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -532,7 +534,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide2 {
-	background: url(../images/slides/1930.jpg) center center no-repeat;
+	background: url(../images/slides/1.jpg) center center no-repeat;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -541,7 +543,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide3 {
-	background: url(../images/slides/1940.jpg) center center no-repeat;
+	background: url(../images/slides/2.jpg) center center no-repeat;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -550,7 +552,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide4 {
-	background: url(../images/slides/1950.jpg) center center no-repeat;
+	background: url(../images/slides/3.jpg) center center no-repeat;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -559,7 +561,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide5 {
-	background: url(../images/slides/1960.jpg) center center no-repeat;
+	background: url(../images/slides/4.jpg) center center no-repeat;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -568,7 +570,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide6 {
-	background: url(../images/slides/1970.jpg) center center no-repeat;
+	background: url(../images/slides/5.jpg) center center no-repeat;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -577,7 +579,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide7 {
-	background: url(../images/slides/1980.jpg) center center no-repeat;
+	background: url(../images/slides/6.jpg) center center no-repeat;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -586,7 +588,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide8 {
-	background: url(../images/slides/1990.jpg) center center no-repeat;
+	background: black;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -595,7 +597,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide9 {
-	background: url(../images/slides/2000.jpg) center center no-repeat;
+	background:black;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -603,23 +605,6 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 	background-attachment: fixed;
 }
 
-#slide10 {
-	background: url(../images/slides/2010.jpg) center center no-repeat;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-#slide11 {
-	background: url(../images/slides/2020.jpg) center center no-repeat;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-}
 
 #slide12 {
 	background: black;

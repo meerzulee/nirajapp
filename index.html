@@ -1,325 +1,571 @@
-
 <!DOCTYPE HTML>
 <!--
    Welcome! Thanks for looking at my code  :)
    If you have any questions contact me at info@ondrejhomola.com
-   http://www.ondrejhomola.com
+   https://www.ondrejhomola.com
    -->
 <html>
-   <head>
-      <title>PORSCHEvolution - Experience interactive history of Porsche</title>
-      <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <meta name="keywords" content="PORSCHEvolution,Porsche,Porsche Evolution,911,1930s,1940s,1950s,1960s,1970s,1980s,1990s,2000s,Carerra,Porsche 356,Ondrej Homola,UX,Edinburgh,Napier,Stuttgart" />
-      <meta name="description" content="Take a quick journey into history of Porsche while listening the decade versions of a song Get Lucky. UX project made by Ondrej Homola. " />
-      <meta name="author" content="Ondrej Homola - www.ondrejhomola.com">
-      <link href="images/favicon.ico" rel="shortcut icon" />
-      <link rel="stylesheet" type="text/css" href="css/reset-min.css">
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link type="text/css" media="screen" rel="stylesheet" href="css/awwwards.css" />
-      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900italic,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
 
-      <meta property="og:image" content="http://porschevolution.com/images/facebook-share.jpg" />
-      <meta property="og:image:type" content="image/jpeg" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="fb:admins" content="1594344136" />
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-12048437-24', 'porschevolution.com');
-        ga('send', 'pageview');
-      </script>
-      <style type="text/css">html{margin:0;padding:0;font:normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;color:#333;-webkit-user-select:none;-ms-user-select:none;-moz-user-select:none;user-select:none}body{margin:0;padding:0;background:0 0}a{outline:0;text-decoration:none}body.rtl{direction:rtl}#widget{display:inline-block;white-space:nowrap;overflow:hidden;text-align:left}#count,.btn,.btn .label,.btn-o,.count-o{display:inline-block;vertical-align:top;zoom:1}.btn-o{max-width:100%}.btn{position:relative;height:20px;box-sizing:border-box;padding:1px 8px 1px 6px;background-color:#1b95e0;color:#fff;border-radius:3px;font-weight:500;cursor:pointer}.rtl .btn{padding:1px 6px 1px 8px}.btn:active,.btn:focus,.btn:hover{background-color:#0c7abf}.btn:active{box-shadow:inset 0 3px 5px rgba(0,0,0,.1)}.xl .btn:active{box-shadow:inset 0 3px 7px rgba(0,0,0,.1)}.btn i{position:relative;top:2px;display:inline-block;width:14px;height:14px;background:transparent 0 0 no-repeat;background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2072%2072%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h72v72H0z%22%2F%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23fff%22%20d%3D%22M68.812%2015.14c-2.348%201.04-4.87%201.744-7.52%202.06%202.704-1.62%204.78-4.186%205.757-7.243-2.53%201.5-5.33%202.592-8.314%203.176C56.35%2010.59%2052.948%209%2049.182%209c-7.23%200-13.092%205.86-13.092%2013.093%200%201.026.118%202.02.338%202.98C25.543%2024.527%2015.9%2019.318%209.44%2011.396c-1.125%201.936-1.77%204.184-1.77%206.58%200%204.543%202.312%208.552%205.824%2010.9-2.146-.07-4.165-.658-5.93-1.64-.002.056-.002.11-.002.163%200%206.345%204.513%2011.638%2010.504%2012.84-1.1.298-2.256.457-3.45.457-.845%200-1.666-.078-2.464-.23%201.667%205.2%206.5%208.985%2012.23%209.09-4.482%203.51-10.13%205.605-16.26%205.605-1.055%200-2.096-.06-3.122-.184%205.794%203.717%2012.676%205.882%2020.067%205.882%2024.083%200%2037.25-19.95%2037.25-37.25%200-.565-.013-1.133-.038-1.693%202.558-1.847%204.778-4.15%206.532-6.774z%22%2F%3E%3C%2Fsvg%3E)}.btn .label{margin-left:3px;white-space:nowrap}.btn .label b{font-weight:500;white-space:nowrap}.rtl .btn .label{margin-right:3px}.rtl .btn .label b{display:inline-block;direction:ltr}.xl{font-size:13px;line-height:26px}.xl .btn{height:28px;border-radius:4px;padding:1px 10px 1px 9px}.rtl.xl .btn{padding:1px 9px 1px 10px}.xl .btn i{top:4px;height:18px;width:18px}.xl .btn .label{margin-left:4px}.rtl.xl .btn .label{margin-right:4px}.aria{position:absolute;left:-999em}.rtl .aria{left:auto;right:-999em}.count-o{position:relative;background:#fff;border:#8799A6 solid 1px;border-radius:3px;visibility:hidden;min-height:18px;min-width:15px;text-align:center}#count{white-space:nowrap;color:#292F33}#count:focus,#count:hover{color:#333;text-decoration:underline}.ncount .count-o{display:none}.count-ready .count-o{visibility:visible}.count-o i,.count-o u{position:absolute;zoom:1;line-height:0;width:0;height:0;left:0;top:50%;margin:-4px 0 0 -4px;border:4px transparent solid;border-right-color:#66757f;border-left:0}.count-o u{margin-left:-3px;border-right-color:#fff}.rtl .count-o i,.rtl .count-o u{left:auto;right:0;margin:-4px -4px 0 0;border:4px transparent solid;border-left-color:#66757f;border-right:0}.rtl .count-o u{margin-right:-3px;border-left-color:#fff}.hcount .count-o{margin:0 0 0 5px}.hcount.rtl .count-o{margin:0 5px 0 0}.hcount #count{padding:0 5px}.xl .count-o{font-size:11px;border-radius:4px}.xl.hcount .count-o{margin:0 0 0 6px}.xl.rtl.hcount .count-o{margin:0 6px 0 0}.xl.hcount .count-o i,.xl.hcount .count-o u{margin:-5px 0 0 -5px;border-width:5px 5px 5px 0}.xl.hcount .count-o u{margin-left:-4px}.xl.rtl.hcount .count-o i,.xl.rtl.hcount .count-o u{margin:-5px -5px 0 0;border-width:5px 0 5px 5px}.xl.rtl.hcount .count-o u{margin-right:-4px}.xl #count{padding:0 7px}</style>
-   </head>
-   <body class="noscroll">
-      <div class="rotate">
-         <img src="images/rotate.png" alt="Rotate your device">
-         <p>Rotate your device</p> 
-      </div>   
+<head>
+   <title>PORSCHEvolution - Experience interactive history of Porsche</title>
+   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <meta name="keywords"
+      content="PORSCHEvolution,Porsche,Porsche Evolution,911,1930s,1940s,1950s,1960s,1970s,1980s,1990s,2000s,Carerra,Porsche 356,Ondrej Homola,UX,Edinburgh,Napier,Stuttgart" />
+   <meta name="description"
+      content="Take a quick journey into history of Porsche while listening the decade versions of a song Get Lucky. UX project made by Ondrej Homola. " />
+   <meta name="author" content="Ondrej Homola - www.ondrejhomola.com">
+   <link href="images/favicon.ico" rel="shortcut icon" />
+   <link rel="stylesheet" type="text/css" href="css/reset-min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
 
-      <div id="topbar">
-         <a href="#" title="PORSCHEvolution by Ondrej Homola">   
-            <div id="logo" class="wrapper">
-               <div class="new-logo"><span>PORSCHE</span>volution</div>
+   <link
+      href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900italic,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200'
+      rel='stylesheet' type='text/css'>
 
-            </div>
-         </a>
-         <a href="http://www.ondrejhomola.com" title="Check out Ondrej Homola's portfolio" target="_blank">
-            <div id="author"><div>&copy; Ondrej Homola</div></div>
-         </a>
-      </div>
-      <div id="awwwards" class="honorable white top right">
-         <a href="http://www.awwwards.com/best-websites/porschevolution/" title="PORSCHEvolution at Awwwards" target="_blank">Awwwards</a>
-      </div>  
-      
-      <ul class="navigation">
-         <li data-slide="0" style="display:none"></li>
-         <li data-slide="1">Intro</li>
-         <li data-slide="2">1930<span>s</span></li>
-         <li data-slide="3">1940<span>s</span></li>
-         <li data-slide="4">1950<span>s</span></li>
-         <li data-slide="5">1960<span>s</span></li>
-         <li data-slide="6">1970<span>s</span></li>
-         <li data-slide="7">1980<span>s</span></li>
-         <li data-slide="8">1990<span>s</span></li>
-         <li data-slide="9">2000<span>s</span></li>
-         <li data-slide="10">2010<span>s</span></li>
-         <li data-slide="11" class="nb">2020<span>s</span></li>
-         <li data-slide="12" class="noborder"></li>
-      </ul>
-      <div id="mute">
-         <div></div>
-          <span class="tooltiptext"><div class="arrow-left"></div>Turning off music kills a half of the experience ;)</span>
-      </div>
-      <div id="floating-social">
-         <div id="fb-root"></div>
-         <script>(function(d, s, id) {
-           var js, fjs = d.getElementsByTagName(s)[0];
-           if (d.getElementById(id)) return;
-           js = d.createElement(s); js.id = id;
-           js.src = "http://connect.facebook.net/en_GB/all.js#xfbml=1&appId=117414981655127";
-           fjs.parentNode.insertBefore(js, fjs);
+   <meta property="og:image" content="https://porschevolution.com/images/facebook-share.jpg" />
+   <meta property="og:image:type" content="image/jpeg" />
+   <meta property="og:image:width" content="1200" />
+   <meta property="og:image:height" content="630" />
+   <meta property="fb:admins" content="1594344136" />
+
+   <style type="text/css">
+      html {
+         margin: 0;
+         padding: 0;
+         font: normal normal normal 11px/18px 'Helvetica Neue', Arial, sans-serif;
+         color: #333;
+         -webkit-user-select: none;
+         -ms-user-select: none;
+         -moz-user-select: none;
+         user-select: none
+      }
+
+      body {
+         margin: 0;
+         padding: 0;
+         background: 0 0
+      }
+
+      a {
+         outline: 0;
+         text-decoration: none
+      }
+
+      body.rtl {
+         direction: rtl
+      }
+
+      #widget {
+         display: inline-block;
+         white-space: nowrap;
+         overflow: hidden;
+         text-align: left
+      }
+
+      #count,
+      .btn,
+      .btn .label,
+      .btn-o,
+      .count-o {
+         display: inline-block;
+         vertical-align: top;
+         zoom: 1
+      }
+
+      .btn-o {
+         max-width: 100%
+      }
+
+      .btn {
+         position: relative;
+         height: 20px;
+         box-sizing: border-box;
+         padding: 1px 8px 1px 6px;
+         background-color: #1b95e0;
+         color: #fff;
+         border-radius: 3px;
+         font-weight: 500;
+         cursor: pointer
+      }
+
+      .rtl .btn {
+         padding: 1px 6px 1px 8px
+      }
+
+      .btn:active,
+      .btn:focus,
+      .btn:hover {
+         background-color: #0c7abf
+      }
+
+      .btn:active {
+         box-shadow: inset 0 3px 5px rgba(0, 0, 0, .1)
+      }
+
+      .xl .btn:active {
+         box-shadow: inset 0 3px 7px rgba(0, 0, 0, .1)
+      }
+
+      .btn i {
+         position: relative;
+         top: 2px;
+         display: inline-block;
+         width: 14px;
+         height: 14px;
+         background: transparent 0 0 no-repeat;
+         background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2072%2072%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h72v72H0z%22%2F%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23fff%22%20d%3D%22M68.812%2015.14c-2.348%201.04-4.87%201.744-7.52%202.06%202.704-1.62%204.78-4.186%205.757-7.243-2.53%201.5-5.33%202.592-8.314%203.176C56.35%2010.59%2052.948%209%2049.182%209c-7.23%200-13.092%205.86-13.092%2013.093%200%201.026.118%202.02.338%202.98C25.543%2024.527%2015.9%2019.318%209.44%2011.396c-1.125%201.936-1.77%204.184-1.77%206.58%200%204.543%202.312%208.552%205.824%2010.9-2.146-.07-4.165-.658-5.93-1.64-.002.056-.002.11-.002.163%200%206.345%204.513%2011.638%2010.504%2012.84-1.1.298-2.256.457-3.45.457-.845%200-1.666-.078-2.464-.23%201.667%205.2%206.5%208.985%2012.23%209.09-4.482%203.51-10.13%205.605-16.26%205.605-1.055%200-2.096-.06-3.122-.184%205.794%203.717%2012.676%205.882%2020.067%205.882%2024.083%200%2037.25-19.95%2037.25-37.25%200-.565-.013-1.133-.038-1.693%202.558-1.847%204.778-4.15%206.532-6.774z%22%2F%3E%3C%2Fsvg%3E)
+      }
+
+      .btn .label {
+         margin-left: 3px;
+         white-space: nowrap
+      }
+
+      .btn .label b {
+         font-weight: 500;
+         white-space: nowrap
+      }
+
+      .rtl .btn .label {
+         margin-right: 3px
+      }
+
+      .rtl .btn .label b {
+         display: inline-block;
+         direction: ltr
+      }
+
+      .xl {
+         font-size: 13px;
+         line-height: 26px
+      }
+
+      .xl .btn {
+         height: 28px;
+         border-radius: 4px;
+         padding: 1px 10px 1px 9px
+      }
+
+      .rtl.xl .btn {
+         padding: 1px 9px 1px 10px
+      }
+
+      .xl .btn i {
+         top: 4px;
+         height: 18px;
+         width: 18px
+      }
+
+      .xl .btn .label {
+         margin-left: 4px
+      }
+
+      .rtl.xl .btn .label {
+         margin-right: 4px
+      }
+
+      .aria {
+         position: absolute;
+         left: -999em
+      }
+
+      .rtl .aria {
+         left: auto;
+         right: -999em
+      }
+
+      .count-o {
+         position: relative;
+         background: #fff;
+         border: #8799A6 solid 1px;
+         border-radius: 3px;
+         visibility: hidden;
+         min-height: 18px;
+         min-width: 15px;
+         text-align: center
+      }
+
+      #count {
+         white-space: nowrap;
+         color: #292F33
+      }
+
+      #count:focus,
+      #count:hover {
+         color: #333;
+         text-decoration: underline
+      }
+
+      .ncount .count-o {
+         display: none
+      }
+
+      .count-ready .count-o {
+         visibility: visible
+      }
+
+      .count-o i,
+      .count-o u {
+         position: absolute;
+         zoom: 1;
+         line-height: 0;
+         width: 0;
+         height: 0;
+         left: 0;
+         top: 50%;
+         margin: -4px 0 0 -4px;
+         border: 4px transparent solid;
+         border-right-color: #66757f;
+         border-left: 0
+      }
+
+      .count-o u {
+         margin-left: -3px;
+         border-right-color: #fff
+      }
+
+      .rtl .count-o i,
+      .rtl .count-o u {
+         left: auto;
+         right: 0;
+         margin: -4px -4px 0 0;
+         border: 4px transparent solid;
+         border-left-color: #66757f;
+         border-right: 0
+      }
+
+      .rtl .count-o u {
+         margin-right: -3px;
+         border-left-color: #fff
+      }
+
+      .hcount .count-o {
+         margin: 0 0 0 5px
+      }
+
+      .hcount.rtl .count-o {
+         margin: 0 5px 0 0
+      }
+
+      .hcount #count {
+         padding: 0 5px
+      }
+
+      .xl .count-o {
+         font-size: 11px;
+         border-radius: 4px
+      }
+
+      .xl.hcount .count-o {
+         margin: 0 0 0 6px
+      }
+
+      .xl.rtl.hcount .count-o {
+         margin: 0 6px 0 0
+      }
+
+      .xl.hcount .count-o i,
+      .xl.hcount .count-o u {
+         margin: -5px 0 0 -5px;
+         border-width: 5px 5px 5px 0
+      }
+
+      .xl.hcount .count-o u {
+         margin-left: -4px
+      }
+
+      .xl.rtl.hcount .count-o i,
+      .xl.rtl.hcount .count-o u {
+         margin: -5px -5px 0 0;
+         border-width: 5px 0 5px 5px
+      }
+
+      .xl.rtl.hcount .count-o u {
+         margin-right: -4px
+      }
+
+      .xl #count {
+         padding: 0 7px
+      }
+   </style>
+</head>
+
+<body class="noscroll">
+   <div class="rotate">
+      <img src="images/rotate.png" alt="Rotate your device">
+      <p>Rotate your device</p>
+   </div>
+
+
+   <ul class="navigation">
+      <li data-slide="0" style="display:none"></li>
+      <li data-slide="1">Главная</li>
+      <li data-slide="2">Об игре</li>
+      <li data-slide="3">Скорость</li>
+      <li data-slide="4">Брось вызов!</li>
+      <li data-slide="5">Каждый момент</li>
+      <li data-slide="6">Испытай</li>
+      <li data-slide="7">гонщик?</li>
+      <li data-slide="8">Отзывы</li>
+      <li data-slide="9">Контакты</li>
+
+      <li data-slide="12" class="noborder"></li>
+   </ul>
+   <div id="mute">
+      <div></div>
+      <span class="tooltiptext">
+         <div class="arrow-left"></div>Turning off music kills a half of the experience ;)
+      </span>
+   </div>
+   <div id="floating-social">
+      <div id="fb-root"></div>
+      <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "http://connect.facebook.net/en_GB/all.js#xfbml=1&appId=117414981655127";
+            fjs.parentNode.insertBefore(js, fjs);
          }(document, 'script', 'facebook-jssdk'));</script>
 
-        <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fporschevolution.com%2F&amp;ref_src=twsrc%5Etfw&amp;text=PORSCHEvolution.com%20-%20a%20journey%20through%20history%20of%20%40Porsche%20with%20decade%20music%20%23GetLucky.%20Turn%20up%20the%20volume!%20Made%20by%20%40Ondrej_Homola.&amp;tw_p=tweetbutton&amp;url=PORSCHEvolution.com" class="btn" id="b"><i></i><span class="label" id="l">Tweet</span></a>
-                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-         <div class="fb-share-button" style="top: -4px;" data-href="http://porschevolution.com" data-type="button_count"></div>
+      <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fporschevolution.com%2F&amp;ref_src=twsrc%5Etfw&amp;text=PORSCHEvolution.com%20-%20a%20journey%20through%20history%20of%20%40Porsche%20with%20decade%20music%20%23GetLucky.%20Turn%20up%20the%20volume!%20Made%20by%20%40Ondrej_Homola.&amp;tw_p=tweetbutton&amp;url=PORSCHEvolution.com"
+         class="btn" id="b"><i></i><span class="label" id="l">Tweet</span></a>
+      <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+      <div class="fb-share-button" style="top: -4px;" data-href="http://porschevolution.com" data-type="button_count">
       </div>
-      <div class="slide" id="slide0" data-slide="0"  >
-         <div class="wrapper">
-            <!-- <div class="new-logo"><span>Shital & Niraj</span></div> -->
-            <!-- <span class="volume">are getting married</span> -->
+   </div>
+   <div class="slide" id="slide0" data-slide="0">
+      <div class="wrapper">
+         <!-- <div class="new-logo"><span>Shital & Niraj</span></div> -->
+         <!-- <span class="volume">are getting married</span> -->
 
-            <div class="landingpage-interaction">
-                   <a class="button0 disabled" data-slide="1" title="START EXPERIENCE">
-                     <input id="round" class="disabled" type="submit" value="LOADING ..." />
-                  </a>
-               </div>
-            
-            <audio id="start" class="active">
-               <source src="sounds/start.ogg" type="audio/ogg">
-               <source src="sounds/start.mp3" type="audio/mpeg">
-            </audio>
+         <div class="landingpage-interaction">
+            <a class="button0 disabled" data-slide="1" title="START EXPERIENCE">
+               <input id="round" class="disabled" type="submit" value="LOADING ..." />
+            </a>
+         </div>
+
+         <audio id="start" class="active">
+            <source src="sounds/start.ogg" type="audio/ogg">
+            <source src="sounds/start.mp3" type="audio/mpeg">
+         </audio>
+      </div>
+   </div>
+   <section class="slide" id="slide1" data-slide="1">
+      <div class="wrapper">
+         <div class="year">
+            <div class="year-inner">GAME OF DRONES</div>
+            <hr>
+            <div class="year-desc">
+               это больше чем игра
+            </div>
          </div>
       </div>
-      <section class="slide" id="slide1" data-slide="1">
+      <audio id="1920s">
+         <source src="sounds/1920.ogg" type="audio/ogg">
+         <source src="sounds/1920.mp3" type="audio/mpeg">
+      </audio>
+      <a class="button" data-slide="2" title=""></a>
+   </section>
+   <section class="slide" id="slide2" data-slide="2">
+      <div class="year">
+         <div class="year-inner dark">Об игре</div>
+         <hr class="dark-line">
+         <div class="year-desc dark">
+            Управляй гоночной техникой на трассе и будь в центре гонки
+            в режиме онлайн
+         </div>
+      </div>
+      <audio id="1930s">
+         <source src="sounds/1930.ogg" type="audio/ogg">
+         <source src="sounds/1930.mp3" type="audio/mpeg">
+      </audio>
+      <a class="button" data-slide="3" title=""></a>
+   </section>
+   <section class="slide" id="slide3" data-slide="3">
+      <div class="year">
+         <div class="year-inner">Скорость – это все!</div>
+         <hr>
+         <div class="year-desc">
+            Оставь своих оппонентов далеко позади, развивая <br>
+            скорость до 130 км/ч
+         </div>
+      </div>
+      <audio id="1940s">
+         <source src="sounds/1940.ogg" type="audio/ogg">
+         <source src="sounds/1940.mp3" type="audio/mpeg">
+      </audio>
+      <a class="button" data-slide="4" title=""></a>
+   </section>
+   <section class="slide" id="slide4" data-slide="4">
+      <div class="year">
+         <div class="year-inner dark">Брось вызов!</div>
+         <hr class="dark-line">
+         <div class="year-desc dark">
+            Оспаривай лидерство с другими участниками на 2-х <br>
+            уровневых трассах</div>
+      </div>
+      <audio id="1950s">
+         <source src="sounds/1950.ogg" type="audio/ogg">
+         <source src="sounds/1950.mp3" type="audio/mpeg">
+      </audio>
+      <a class="button" data-slide="5" title=""></a>
+   </section>
+   <section class="slide" id="slide5" data-slide="5">
+      <div class="year year-shadow">
+         <div class="year-inner">Каждый момент – решающий!</div>
+         <hr>
+         <div class="year-desc">
+            Играй и выигрывай в честной гонке!
+         </div>
+      </div>
+      <audio id="1960s">
+         <source src="sounds/1960.ogg" type="audio/ogg">
+         <source src="sounds/1960.mp3" type="audio/mpeg">
+      </audio>
+      <a class="button" data-slide="6" title=""></a>
+   </section>
+   <section class="slide" id="slide6" data-slide="6">
+      <div class="year">
+         <div class="year-inner dark">Испытай новые ощущения! </div>
+         <hr>
+         <div class="year-desc dark">
+            Стань частью нового вида киберспорта
+         </div>
+      </div>
+      <audio id="1970s">
+         <source src="sounds/1970.ogg" type="audio/ogg">
+         <source src="sounds/1970.mp3" type="audio/mpeg">
+      </audio>
+      <a class="button" data-slide="7" title=""></a>
+   </section>
+   <section class="slide" id="slide7" data-slide="7">
+      <div class="year dark">
+         <div class="year-inner ">Уверенный в себе гонщик?</div>
+         <hr class="dark-line">
+         <div class="year-desc ">
+            Докажи, что ты лучший!
+         </div>
+      </div>
+      <audio id="1980s">
+         <source src="sounds/1980.ogg" type="audio/ogg">
+         <source src="sounds/1980.mp3" type="audio/mpeg">
+      </audio>
+      <a class="button" data-slide="8" title=""></a>
+   </section>
+   <section class="slide" id="slide8" data-slide="8">
+      <div class="year">
+         <div class="year-inner">Что говорят о нас наши клиенты</div>
+         <hr>
+         <div class="year-desc">
+
+         </div>
+      </div>
+      <audio id="1990s">
+         <source src="sounds/1990.ogg" type="audio/ogg">
+         <source src="sounds/1990.mp3" type="audio/mpeg">
+      </audio>
+      <a class="button" data-slide="9" title=""></a>
+   </section>
+   <section class="slide" id="slide9" data-slide="9">
+      <div class="year">
+         <div class="year-inner">Контакты</div>
+         <hr>
+         <div class="year-desc">
+            <!-- <span>911:</span>
+            The sixth generation of the 911 series' the new 911 Turbo with 480PS<br> six-speed manual transmission
+            requires 3.9 seconds from 0 to 100 km/h. -->
+         </div>
+      </div>
+      <audio id="2000s">
+         <source src="sounds/2000.ogg" type="audio/ogg">
+         <source src="sounds/2000.mp3" type="audio/mpeg">
+      </audio>
+      <a class="button" data-slide="10" title=""></a>
+   </section>
+   <!-- <section class="slide" id="slide10" data-slide="10">
+      <div class="year">
+         <div class="year-inner dark">2010<span>s</span></div>
+         <hr class="dark-line">
+         <div class="year-desc dark">
+            <span>911 Carrera 4S Coupe:</span>
+            The iconic Porsche 911 sports car celebrates its 50th birthday in 2013. Today's 911 still has many stories
+            to tell. Of heroic race victories, iconic deisgn, childhood dreams. And of a timeless idea.
+         </div>
+      </div>
+      <audio id="2010s">
+         <source src="sounds/2010.ogg" type="audio/ogg">
+         <source src="sounds/2010.mp3" type="audio/mpeg">
+      </audio>
+      <a class="button" data-slide="11" title=""></a>
+   </section> -->
+   <!-- <section class="slide" id="slide11" data-slide="11">
+      <div class="year">
+         <div class="year-inner">2020<span>s</span></div>
+         <hr>
+         <div class="year-desc">
+            <span>The 911.</span> <br>
+            Tradition Future.<br> Since 1963.<br> <br>
+         </div>
+      </div>
+      <audio id="2020s">
+         <source src="sounds/2020.ogg" type="audio/ogg">
+         <source src="sounds/2020.mp3" type="audio/mpeg">
+      </audio>
+      <a class="button" data-slide="12" title=""></a>
+   </section> -->
+   <section class="slide" id="slide12" data-slide="12">
+      <div id="about1">
          <div class="wrapper">
-            <div class="year">
-               <div class="year-inner">Ferdinand Porsche</div>
-               <hr>
-               <div class="year-desc">
-                  The history of Porsche goes back to 1875 - the birth year of Ferdinand Porsche. It is he who laid the foundations for a unique company with strong ideals.
+
+
+            <div class="about-text">
+               <div class="weblink">
+                  <span>Created by:</span><br><a href="https://andro.media" target="_blank"
+                     title="Open my website in new window">www.andro.media</a>
+
                </div>
-            </div>
-         </div>
-         <audio id="1920s" >
-            <source src="sounds/1920.ogg" type="audio/ogg">
-            <source src="sounds/1920.mp3" type="audio/mpeg">
-         </audio>
-         <a class="button" data-slide="2" title=""></a>
-      </section>
-      <section class="slide" id="slide2" data-slide="2"  >
-         <div class="year">
-            <div class="year-inner dark">1930<span>s</span></div>
-            <hr class="dark-line">
-            <div class="year-desc dark">
-               <span>Type 64 Racing Coupé:</span> 
-               Built for long-distance ‘Berlin–Rom-Wagen’ endurance <br>competition. Considered the forefathers of all later Porsche sports cars.
-            </div>
-         </div>
-         <audio id="1930s" >
-            <source src="sounds/1930.ogg" type="audio/ogg">
-            <source src="sounds/1930.mp3" type="audio/mpeg">
-         </audio>
-         <a class="button" data-slide="3" title=""></a>
-      </section>
-      <section class="slide" id="slide3" data-slide="3" >
-         <div class="year">
-            <div class="year-inner">1940<span>s</span></div>
-            <hr>
-            <div class="year-desc">
-               <span>356 Speedster:</span> 
-               Porsche's first production automobile started in Gmünd <br>in Austria, where only 49 of these aluminum Porsches were built.
-            </div>
-         </div>
-         <audio id="1940s" >
-            <source src="sounds/1940.ogg" type="audio/ogg">
-            <source src="sounds/1940.mp3" type="audio/mpeg">
-         </audio>
-         <a class="button" data-slide="4" title=""></a>
-      </section>
-      <section class="slide" id="slide4" data-slide="4" >
-         <div class="year">
-            <div class="year-inner dark">1950<span>s</span></div>
-            <hr class="dark-line">
-            <div class="year-desc dark">
-               <span>356 Carrera Cabriolet:</span>
-               Shortly before Porsche celebrated  10<sup>th</sup> anniversary <br>of 356 model, 356 had developed into one of the world’s most respected sports cars.
-            </div>
-         </div>
-         <audio id="1950s" >
-            <source src="sounds/1950.ogg" type="audio/ogg">
-            <source src="sounds/1950.mp3" type="audio/mpeg">
-         </audio>
-         <a class="button" data-slide="5" title=""></a>
-      </section>
-      <section class="slide" id="slide5" data-slide="5" >
-         <div class="year year-shadow">
-            <div class="year-inner">1960<span>s</span></div>
-            <hr>
-            <div class="year-desc">
-               <span>901:</span>
-               Successor of Porsche 356. Between 14 September and 16 November 1964,<br> 82 cars were built. Due to Peugeot was renamed to 911.
-            </div>
-         </div>
-         <audio id="1960s" >
-            <source src="sounds/1960.ogg" type="audio/ogg">
-            <source src="sounds/1960.mp3" type="audio/mpeg">
-         </audio>
-         <a class="button" data-slide="6" title=""></a>
-      </section>
-      <section class="slide" id="slide6" data-slide="6" >
-         <div class="year">
-            <div class="year-inner">1970<span>s</span></div>
-            <hr>
-            <div class="year-desc">
-               <span>911 Turbo:</span> 
-               At the Paris Auto Show Porsche presents the 911 Turbo – the world’s first<br> production sports car with exhaust turbocharger and pressure regulator.
-            </div>
-         </div>
-         <audio id="1970s" >
-            <source src="sounds/1970.ogg" type="audio/ogg">
-            <source src="sounds/1970.mp3" type="audio/mpeg">
-         </audio>
-         <a class="button" data-slide="7" title=""></a>
-      </section>
-      <section class="slide" id="slide7" data-slide="7" >
-         <div class="year dark">
-            <div class="year-inner dark">1980<span>s</span></div>
-            <hr class="dark-line">
-            <div class="year-desc dark">
-               <span>911 Carrera Speedster:</span>
-               In 1984 the 911 celebrated it's 20th birthday. It had a lower and <br>flatter windscreen and a simpler manual top that folded beneath a fiberglass cover.
-            </div>
-         </div>
-         <audio id="1980s" >
-            <source src="sounds/1980.ogg" type="audio/ogg">
-            <source src="sounds/1980.mp3" type="audio/mpeg">
-         </audio>
-         <a class="button" data-slide="8" title=""></a>
-      </section>
-      <section class="slide" id="slide8" data-slide="8" >
-         <div class="year">
-            <div class="year-inner">1990<span>s</span></div>
-            <hr>
-            <div class="year-desc">
-               <span>911:</span>
-               It’s got classic lines, albeit updated with plastic bumpers, <br>with modern technology such as 4x4 ABS and electronic heating.
-            </div>
-         </div>
-         <audio id="1990s" >
-            <source src="sounds/1990.ogg" type="audio/ogg">
-            <source src="sounds/1990.mp3" type="audio/mpeg">
-         </audio>
-         <a class="button" data-slide="9" title=""></a>
-      </section>
-      <section class="slide" id="slide9" data-slide="9" >
-         <div class="year">
-            <div class="year-inner">2000<span>s</span></div>
-            <hr>
-            <div class="year-desc">
-               <span>911:</span>
-               The sixth generation of the 911 series' the new 911 Turbo with 480PS<br> six-speed manual transmission requires 3.9 seconds from 0 to 100 km/h. 
-            </div>
-         </div>
-         <audio id="2000s" >
-            <source src="sounds/2000.ogg" type="audio/ogg">
-            <source src="sounds/2000.mp3" type="audio/mpeg">
-         </audio>
-         <a class="button" data-slide="10" title=""></a>
-      </section>
-      <section class="slide" id="slide10" data-slide="10" >
-         <div class="year">
-            <div class="year-inner dark">2010<span>s</span></div>
-            <hr class="dark-line">
-            <div class="year-desc dark">
-               <span>911 Carrera 4S Coupe:</span> 
-               The iconic Porsche 911 sports car celebrates its 50th birthday in 2013. Today's 911 still has many stories to tell. Of heroic race victories, iconic deisgn, childhood dreams. And of a timeless idea.
-            </div>
-         </div>
-         <audio id="2010s" >
-            <source src="sounds/2010.ogg" type="audio/ogg">
-            <source src="sounds/2010.mp3" type="audio/mpeg">
-         </audio>
-         <a class="button" data-slide="11" title=""></a>
-      </section>
-      <section class="slide" id="slide11" data-slide="11" >
-         <div class="year">
-            <div class="year-inner">2020<span>s</span></div>
-            <hr>
-            <div class="year-desc">
-               <span>The 911.</span> <br> 
-               Tradition Future.<br>  Since 1963.<br> <br> 
-            </div>
-         </div>
-         <audio id="2020s" >
-            <source src="sounds/2020.ogg" type="audio/ogg">
-            <source src="sounds/2020.mp3" type="audio/mpeg">
-         </audio>
-         <a class="button" data-slide="12" title=""></a>
-      </section>
-      <section class="slide" id="slide12" data-slide="12" >
-         <div id="about1">
-            <div class="wrapper">
-               
 
-               <div class="about-text">
-                  <div class="weblink">
-                     <span>Created by:</span><br><a href="http://www.ondrejhomola.com" target="_blank" title="Open my website in new window">www.ondrejhomola.com</a>
-
-                  </div>
-                  <div class="follow">
-                     <a href="https://twitter.com/Ondrej_Homola" class="about-twitter" title="Follow @Ondrej_Homola" target="_blank"><img src="images/twitter.png" alt="Follow @Ondrej_Homola"></a>
-               </div>
             </div>
 
 
 
-                  
-               </div>
-            </div>
-         </div>
-         <div id="about2">
-            <div class="wrapper">
-               <div class="about-text">
-                  <p>Many thanks to <a href="http://flavors.me/pvnova" target="_blank" title="Open PV Nova's website in new window">PV NOVA</a>, a cool musician from France, for the song ‘Evolution of Get Lucky - Daft Punk Chronologic cover.'</p>
-                  <p class="disclaimer">Please note that I do not own the music in this project and it is not my intention to infringe itellectual property rights of Porsche.</p>   
-                  
 
-                  
-               </div>
+         </div>
+      </div>
+      </div>
+      <div id="about2">
+         <div class="wrapper">
+            <div class="about-text">
+               <p>Many thanks to <a href="http://flavors.me/pvnova" target="_blank"
+                     title="Open PV Nova's website in new window">PV NOVA</a>, a cool musician from France, for the song
+                  ‘Evolution of Get Lucky - Daft Punk Chronologic cover.'</p>
+               <p class="disclaimer">Please note that I do not own the music in this project and it is not my intention
+                  to infringe itellectual property rights of Porsche.</p>
+
+
+
             </div>
          </div>
-      </section>
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-      <script src="js/jpreloader.min.js"></script>
-       <script type="text/javascript">
-         $(document).ready(function() {
-            $('body').jpreLoader();
-         });
-      </script>
-      <script type="text/javascript" src="js/mobile.js"></script>
-      <script type="text/javascript" src="js/js.js"></script>
-      <script type="text/javascript" src="js/evolution.js"></script>
-      <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-      <script type="text/javascript" src="js/waypoints.min.js"></script>
-      <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-      
-     
-      
-   </body>
+      </div>
+   </section>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+   <script src="js/jpreloader.min.js"></script>
+   <script type="text/javascript">
+      $(document).ready(function () {
+         $('body').jpreLoader();
+      });
+   </script>
+   <script type="text/javascript" src="js/mobile.js"></script>
+   <script type="text/javascript" src="js/js.js"></script>
+   <script type="text/javascript" src="js/evolution.js"></script>
+   <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+   <script type="text/javascript" src="js/waypoints.min.js"></script>
+   <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+
+
+</body>
+
 </html>
