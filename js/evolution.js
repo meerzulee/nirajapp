@@ -1,28 +1,28 @@
 $(document).ready(function () {
-    $(document).keydown(function(e){
-        if (e.keyCode == 40) { 
+    $(document).keydown(function (e) {
+        if (e.keyCode == 40) {
             //alert('#' + dataslide4N + '')
-           $("html, body").animate({
+            $("html, body").animate({
 
-                    scrollTop: $('#' + dataslide4N + '').offset().top
-                }, 1500, 'easeInOutQuint');
-           $('section[id="' + dataslide1C + '"] .button').addClass('flash');
-           return false;
-           event.preventDefault();
+                scrollTop: $('#' + dataslide4N + '').offset().top
+            }, 1500, 'easeInOutQuint');
+            $('section[id="' + dataslide1C + '"] .button').addClass('flash');
+            return false;
+            event.preventDefault();
         }
 
-        if (e.keyCode == 38) { 
+        if (e.keyCode == 38) {
             //alert('#' + dataslide4N + '')
-           $("html, body").animate({
+            $("html, body").animate({
 
-                    scrollTop: $('#' + dataslide2P + '').offset().top
-                }, 1500, 'easeInOutQuint');
-           return false;
-           event.preventDefault();
+                scrollTop: $('#' + dataslide2P + '').offset().top
+            }, 1500, 'easeInOutQuint');
+            return false;
+            event.preventDefault();
         }
 
-        if (e.keyCode == 32) { 
-           $(".button0").click()
+        if (e.keyCode == 32) {
+            $(".button0").click()
         }
     });
 
@@ -38,47 +38,47 @@ $(document).ready(function () {
         //If the user scrolls up change the navigation link that has the same data-slide attribute as the slide to active and 
         //remove the active class from the previous navigation link 
         if (direction === 'down') {
-            $('section[id="' + dataslide1C + '"] audio').addClass('active');
-            $('section[id="' + dataslide2P + '"] audio').trigger("pause").removeClass('active').animate({
-                volume: 1
-            }, 1000);
-            $('section[id="' + dataslide4N + '"] audio').trigger("pause").removeClass('active').animate({
-                volume: 1
-            }, 1000);
-            $('section[id="' + dataslide1C + '"] audio.active').trigger("play");
-            $('section[id="' + dataslide1C + '"] audio.active').animate({
-                volume: 1
-            }, 1000);
+            // $('section[id="' + dataslide1C + '"] audio').addClass('active');
+            // $('section[id="' + dataslide2P + '"] audio').trigger("pause").removeClass('active').animate({
+            //     volume: 1
+            // }, 1000);
+            // $('section[id="' + dataslide4N + '"] audio').trigger("pause").removeClass('active').animate({
+            //     volume: 1
+            // }, 1000);
+            // $('section[id="' + dataslide1C + '"] audio.active').trigger("play");
+            // $('section[id="' + dataslide1C + '"] audio.active').animate({
+            //     volume: 1
+            // }, 1000);
             $('section[id="' + dataslide1C + '"] div.year').fadeIn(2000);
             $('section[id="' + dataslide2P + '"] a.button').fadeOut(1000);
-            parent.location.hash = yearhashtag;
+            // parent.location.hash = yearhashtag;
 
             //$('audio:not(.active)').prop("currentTime",0) // NEW: resets audio
         }
         // else If the user scrolls down change the navigation link that has the same data-slide attribute as the slide to active and 
         //remove the active class from the next navigation link 
         else {
-            $('section[id="' + dataslide1C + '"] audio').trigger("pause").removeClass('active').animate({
-                volume: 1
-            }, 1000);
-            $('section[id="' + dataslide2P + '"] audio').addClass('active');
-            $('section[id="' + dataslide2P + '"] audio.active').trigger("play");
-            $('section[id="' + dataslide2P + '"] audio.active').animate({
-                volume: 1
-            }, 1000);
+            // $('section[id="' + dataslide1C + '"] audio').trigger("pause").removeClass('active').animate({
+            //     volume: 1
+            // }, 1000);
+            // $('section[id="' + dataslide2P + '"] audio').addClass('active');
+            // $('section[id="' + dataslide2P + '"] audio.active').trigger("play");
+            // $('section[id="' + dataslide2P + '"] audio.active').animate({
+            //     volume: 1
+            // }, 1000);
             $('section[id="' + dataslide1C + '"] div.year').fadeOut(1000);
             $('section[id="' + dataslide2P + '"] a.button').fadeIn(1000);
-            parent.location.hash = yearhashtag;
+            // parent.location.hash = yearhashtag;
 
             //$('audio:not(.active)').prop("currentTime",0) // NEW: resets audio 
         }
 
         //below turns sound down when not activated
-        $('audio:not(.active)').animate({
-            volume: 0
-        }, 0, function () {
-            $('audio:not(.active)').get(0).pause();
-        })
+        // $('audio:not(.active)').animate({
+        //     volume: 0
+        // }, 0, function () {
+        //     $('audio:not(.active)').get(0).pause();
+        // })
 
 
 
@@ -130,23 +130,23 @@ $(document).ready(function () {
                 scrollTop: $("#slide10").offset().top
             }, 1500, 'easeInOutQuint');
         });
-        $("#2010s").bind("ended", function () {
-            $("html,body").animate({
-                scrollTop: $("#slide11").offset().top
-            }, 1500, 'easeInOutQuint');
-        });
-        $("#2020s").bind("ended", function () {
-            $("html,body").animate({
-                scrollTop: $("#slide12").offset().top
-            }, 1500, 'easeInOutQuint');
-        });
+        // $("#2010s").bind("ended", function () {
+        //     $("html,body").animate({
+        //         scrollTop: $("#slide11").offset().top
+        //     }, 1500, 'easeInOutQuint');
+        // });
+        // $("#2020s").bind("ended", function () {
+        //     $("html,body").animate({
+        //         scrollTop: $("#slide12").offset().top
+        //     }, 1500, 'easeInOutQuint');
+        // });
 
-        if ($('#mute').hasClass('muted')) {
-            $('audio.active').trigger("pause");
-            $('audio').animate({
-                volume: 0
-            }, 0);
-        };
+        // if ($('#mute').hasClass('muted')) {
+        //     $('audio.active').trigger("pause");
+        //     $('audio').animate({
+        //         volume: 0
+        //     }, 0);
+        // };
     }, {
         offset: '50%'
     });
